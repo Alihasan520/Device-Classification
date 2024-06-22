@@ -92,42 +92,48 @@ The Devices Price Classification System is designed to predict the price range o
     Response: Returns the updated device object with the predicted price range.
 
 #Example Usage
-  *Retrieve All Devices:
-        '''curl -X  GET http://localhost:8080/api/devices'''
-  *Retrieve Device by ID:
-        '''curl -X GET http://localhost:8080/api/devices/1'''
-  *Create New Device:
-        '''curl -X POST \
-        http://localhost:8080/api/devices \
-        -H 'Content-Type: application/json' \
-        -d '{
-          "batteryPower": 3000,
-          "blue": true,
-          "clockSpeed": 2.3,
-          "dualSim": false,
-          "fc": 12,
-          "fourG": true,
-          "intMemory": 64,
-          "mDep": 0.4,
-          "mobileWt": 150,
-          "nCores": 8,
-          "pc": 16,
-          "pxHeight": 1920,
-          "pxWidth": 1080,
-          "ram": 4,
-          "scH": 5,
-          "scW": 3,
-          "talkTime": 20,
-          "threeG": true,
-          "touchScreen": true,
-          "wifi": true,
-          "priceRange": null
-        }'
-      '''
 
-   *Predict Device Price:
-      '''curl -X POST http://localhost:8080/api/devices/predict/1'''
-              
+      *Retrieve All Devices:
+            '''curl -X  GET http://localhost:8080/api/devices'''
+    
+            
+      *Retrieve Device by ID:
+            '''curl -X GET http://localhost:8080/api/devices/1'''
+    
+            
+      *Create New Device:
+            '''curl -X POST \
+            http://localhost:8080/api/devices \
+            -H 'Content-Type: application/json' \
+            -d '{
+              "batteryPower": 3000,
+              "blue": true,
+              "clockSpeed": 2.3,
+              "dualSim": false,
+              "fc": 12,
+              "fourG": true,
+              "intMemory": 64,
+              "mDep": 0.4,
+              "mobileWt": 150,
+              "nCores": 8,
+              "pc": 16,
+              "pxHeight": 1920,
+              "pxWidth": 1080,
+              "ram": 4,
+              "scH": 5,
+              "scW": 3,
+              "talkTime": 20,
+              "threeG": true,
+              "touchScreen": true,
+              "wifi": true,
+              "priceRange": null
+            }'
+          '''
+    
+    
+       *Predict Device Price:
+          '''curl -X POST http://localhost:8080/api/devices/predict/1'''
+                  
 
 
 
