@@ -1,13 +1,13 @@
 # Device-Classification
 The Devices Price Classification System is designed to predict the price range of mobile devices based on their specifications
 
-#Project Structure
+## Project Structure
   The system includes two main components:
   
  - Python Project: Contains the machine learning model and necessary scripts for training and prediction..
  - Spring Boot Project: Manages device entities and exposes RESTful endpoints for CRUD operations and price predictions.
  
-#Requirements
+## Requirements
 * Python:
 
    * Python 3.7+
@@ -16,7 +16,7 @@ The Devices Price Classification System is designed to predict the price range o
 
 * SpringBoot:
     We need here JDK 17+ with  Maven 3.6 or higher, and here is dpendencies used in springboot:
-    *Dependencies Used in SpringBoot Project
+    * Dependencies Used in SpringBoot Project
       -Spring Boot Version: 2.7.0
     
     -Spring Boot Starters:
@@ -38,14 +38,14 @@ The Devices Price Classification System is designed to predict the price range o
       javax.persistence
       .persistence-api:2.2
   
-#How to run the project:
-  *In python section:
+## How to run the project:
+  * In python section:
           * Obtain your Ngrok authentication key and set it in your Python script:
           '''python
             ngrok.set_auth_token("Your Authentication key"). '''
          * After running Ngrok, copy the generated tunnel URL.
      
-#Spring Boot Section:
+## Spring Boot Section:
         * Paste the Ngrok tunnel URL into the application.properties file under the Spring Boot section:
             '''java
                 python.service.url=https://NgrokTunnel URL
@@ -53,16 +53,16 @@ The Devices Price Classification System is designed to predict the price range o
         * Ensure you have configured your database information in the application.properties file under the Spring Boot section.
         * Run the Spring Boot application as a Java application.
 
-#Note:
+## Note:
     Ensure all dependencies are installed and configurations are correctly set before running both Python and Spring Boot components.
     Adjust database configurations and Ngrok settings as per your environment setup.
     
-#Testing
-  API Testing: Use tools like Postman or curl to send requests to the RESTful endpoints provided by the Spring Boot application for     
-  device management and price prediction.
+## Testing
+    API Testing: Use tools like Postman or curl to send requests to the RESTful endpoints provided by the Spring Boot application for     
+    device management and price prediction.
 
-#Testing APIs
-    The Spring Boot application exposes four main APIs for managing device data and predicting device prices:
+## Testing APIs
+  The Spring Boot application exposes four main APIs for managing device data and predicting device prices:
     
     Retrieve All Devices
     
@@ -91,17 +91,17 @@ The Devices Price Classification System is designed to predict the price range o
     Usage: Replace {deviceId} in the endpoint with the ID of the device for which you want to predict the price.
     Response: Returns the updated device object with the predicted price range.
 
-#Example Usage
+## Example Usage
 
-      *Retrieve All Devices:
+      * Retrieve All Devices:
             '''curl -X  GET http://localhost:8080/api/devices'''
     
             
-      *Retrieve Device by ID:
+      * Retrieve Device by ID:
             '''curl -X GET http://localhost:8080/api/devices/1'''
     
             
-      *Create New Device:
+      * Create New Device:
             '''curl -X POST \
             http://localhost:8080/api/devices \
             -H 'Content-Type: application/json' \
@@ -131,7 +131,7 @@ The Devices Price Classification System is designed to predict the price range o
           '''
     
     
-       *Predict Device Price:
+       * Predict Device Price:
           '''curl -X POST http://localhost:8080/api/devices/predict/1'''
                   
 
