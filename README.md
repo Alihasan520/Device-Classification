@@ -1,7 +1,7 @@
-### Device-Classification
+# Device-Classification
 The Devices Price Classification System is designed to predict the price range of mobile devices based on their specifications
 
-##Project Structure
+#Project Structure
   The system includes two main components:
   
  - Python Project: Contains the machine learning model and necessary scripts for training and prediction..
@@ -53,11 +53,11 @@ The Devices Price Classification System is designed to predict the price range o
         * Ensure you have configured your database information in the application.properties file under the Spring Boot section.
         * Run the Spring Boot application as a Java application.
 
-##Note:
+#Note:
     Ensure all dependencies are installed and configurations are correctly set before running both Python and Spring Boot components.
     Adjust database configurations and Ngrok settings as per your environment setup.
     
-##Testing
+#Testing
   API Testing: Use tools like Postman or curl to send requests to the RESTful endpoints provided by the Spring Boot application for     
   device management and price prediction.
 
@@ -91,7 +91,7 @@ The Devices Price Classification System is designed to predict the price range o
     Usage: Replace {deviceId} in the endpoint with the ID of the device for which you want to predict the price.
     Response: Returns the updated device object with the predicted price range.
 
-##Example Usage
+#Example Usage
   *Retrieve All Devices:
         '''curl -X  GET http://localhost:8080/api/devices'''
   *Retrieve Device by ID:
