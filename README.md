@@ -10,8 +10,8 @@ The Devices Price Classification System is designed to predict the price range o
 #Requirements
 * Python:
 
-    1) Python 3.7+
-    2) Required libraries: pandas, numpy,matplotlib, scikit-learn,import joblib
+   ** Python 3.7+
+   *1) Required libraries: pandas, numpy,matplotlib, scikit-learn,import joblib
     , fastapi,pyngrok, Flask,, ydata-profiling,pydantic-settings.
 
 * SpringBoot:
